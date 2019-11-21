@@ -10,26 +10,29 @@
   - Severin Mairinger [@sevesv9](sevsev9)
 - VueJS
   - Components: 
-    - Clemns Schierl
-    - Phillip Kollau
+    - Clemens Schierl [@clemens1706](clemens1706)
+    - Philipp Kollau []()
   - Basissystem
-    - Manuel Lidauer
+    - Manuel Lidauer [@ManuelLidauer](ManuelLidauer)
   - Visualisierung
-    - Johannes Köttstorfer
+    - Johannes Köttstorfer []()
 - Java
   - Alarm
-    - Julian Mehlig
+    - Julian Mehlig []()
   - Relationale DB
-    - Manuel Riedl
+    - Manuel Riedl []()
   - Core SYS
-    - Fabian Zuegg
+    - Fabian Zuegg []()
 - NodeJS
   - Registrierung/Passport...
-    - Linnert
+    - Florian Linnert []()
   - Persistenz
-    - Koppler
+    - Marc Koppler []()
   - Allgemeine Struktur
-    - Stockinger
+    - Stockinger []()
 - Publisher
-  - Simon Stockinger
-  - Sebastian Zauner
+  - Simon Stockinger []()
+  - Sebastian Zauner [@sebastianzauner](sebastianzauner)
+- TinkerCAD
+  - Jonathan Spitzbart
+  - Christoph Schaumberger
