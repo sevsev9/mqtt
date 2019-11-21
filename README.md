@@ -22,17 +22,17 @@
   - Relationale DB
     - Manuel Riedl [@ManuelRiedl](https://github.com/ManuelRiedl)
   - Core SYS
-    - Fabian Zuegg [@](https://github.com/)
+    - Fabian Zuegg [@FabianZuegg](https://github.com/FabianZuegg)
 - NodeJS
   - Registrierung/Passport...
-    - Florian Linnert [@](https://github.com/)
+    - Florian Linnert [@linnertf](https://github.com/linnertf)
   - Persistenz
-    - Marc Koppler [@](https://github.com/)
+    - Marc Koppler [@MarcKoppler](https://github.com/MarcKoppler)
   - Allgemeine Struktur
-    - Stockinger [@](https://github.com/)
+    - Simon Stockinger [@](https://github.com/)
 - Publisher
   - Simon Stockinger [@](https://github.com/)
   - Sebastian Zauner [@sebastianzauner](https://github.com/sebastianzauner)
 - TinkerCAD
-  - Jonathan Spitzbart
-  - Christoph Schaumberger
+  - Jonathan Spitzbart [@SpitzbartJonathan](https://github.com/SpitzbartJonathan)
+  - Christoph Schaumberger [@SchaumbergerChristoph](https://github.com/SchaumbergerChristoph)
