@@ -5,10 +5,6 @@
 - Java
 - NodeJS
 
-## Contributors
-
-## Contributing
-
 ## Area of Responsibilities
 - Project Lead
   - Severin Mairinger [@sevesv9](sevsev9)
