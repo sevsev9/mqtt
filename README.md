@@ -15,12 +15,12 @@
   - Basissystem
     - Manuel Lidauer [@ManuelLidauer](https://github.com/ManuelLidauer)
   - Visualisierung
-    - Johannes Köttstorfer [@](https://github.com/)
+    - Johannes Köttstorfer [@JohannesKoettstorfer](https://github.com/JohannesKoettstorfer)
 - Java
   - Alarm
-    - Julian Mehlig [@](https://github.com/)
+    - Julian Mehlig [@JulianMehlig](https://github.com/JulianMehlig)
   - Relationale DB
-    - Manuel Riedl [@](https://github.com/)
+    - Manuel Riedl [@ManuelRiedl](https://github.com/ManuelRiedl)
   - Core SYS
     - Fabian Zuegg [@](https://github.com/)
 - NodeJS
