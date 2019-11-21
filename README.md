@@ -7,10 +7,10 @@
 
 ## Area of Responsibilities
 - Project Lead
-  - Severin Mairinger [https://github.com/sevsev9](sevsev9)
+  - Severin Mairinger [@sevsv9](https://github.com/sevsev9)
 - VueJS
   - Components: 
-    - Clemens Schierl [@clemens1706](clemens1706)
+    - Clemens Schierl [clemens1706](@clemens1706)
     - Philipp Kollau []()
   - Basissystem
     - Manuel Lidauer [@ManuelLidauer](ManuelLidauer)
