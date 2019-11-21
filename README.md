@@ -7,7 +7,7 @@
 
 ## Area of Responsibilities
 - Project Lead
-  - Severin Mairinger [@sevesv9](sevsev9)
+  - Severin Mairinger [https://github.com/sevsev9](sevsev9)
 - VueJS
   - Components: 
     - Clemens Schierl [@clemens1706](clemens1706)
