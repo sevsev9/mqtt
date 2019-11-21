@@ -10,29 +10,29 @@
   - Severin Mairinger [@sevsv9](https://github.com/sevsev9)
 - VueJS
   - Components: 
-    - Clemens Schierl [clemens1706](@clemens1706)
-    - Philipp Kollau []()
+    - Clemens Schierl [@clemens1706](https://github.com/clemens1706)
+    - Philipp Kollau [@philjey](https://github.com/philjey)
   - Basissystem
-    - Manuel Lidauer [@ManuelLidauer](ManuelLidauer)
+    - Manuel Lidauer [@ManuelLidauer](https://github.com/ManuelLidauer)
   - Visualisierung
-    - Johannes Köttstorfer []()
+    - Johannes Köttstorfer [@](https://github.com/)
 - Java
   - Alarm
-    - Julian Mehlig []()
+    - Julian Mehlig [@](https://github.com/)
   - Relationale DB
-    - Manuel Riedl []()
+    - Manuel Riedl [@](https://github.com/)
   - Core SYS
-    - Fabian Zuegg []()
+    - Fabian Zuegg [@](https://github.com/)
 - NodeJS
   - Registrierung/Passport...
-    - Florian Linnert []()
+    - Florian Linnert [@](https://github.com/)
   - Persistenz
-    - Marc Koppler []()
+    - Marc Koppler [@](https://github.com/)
   - Allgemeine Struktur
-    - Stockinger []()
+    - Stockinger [@](https://github.com/)
 - Publisher
-  - Simon Stockinger []()
-  - Sebastian Zauner [@sebastianzauner](sebastianzauner)
+  - Simon Stockinger [@](https://github.com/)
+  - Sebastian Zauner [@sebastianzauner](https://github.com/sebastianzauner)
 - TinkerCAD
   - Jonathan Spitzbart
   - Christoph Schaumberger
