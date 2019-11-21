@@ -30,6 +30,6 @@
     - Koppler
   - Allgemeine Struktur
     - Stockinger
-- Broker
+- Publisher
   - Simon Stockinger
   - Sebastian Zauner
