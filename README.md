@@ -29,7 +29,7 @@
   - Persistenz
     - Marc Koppler [@MarcKoppler](https://github.com/MarcKoppler)
   - Allgemeine Struktur
-    - Stockinger [@](https://github.com/)
+    - Simon Stockinger [@](https://github.com/)
 - Publisher
   - Simon Stockinger [@](https://github.com/)
   - Sebastian Zauner [@sebastianzauner](https://github.com/sebastianzauner)
