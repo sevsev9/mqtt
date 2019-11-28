@@ -29,9 +29,9 @@
   - Persistenz
     - Marc Koppler [@MarcKoppler](https://github.com/MarcKoppler)
   - Allgemeine Struktur
-    - Simon Stockinger [@](https://github.com/)
+    - Simon Stockinger [@InstantNoodleZ](https://github.com/InstantNoodleZ)
 - Publisher
-  - Simon Stockinger [@](https://github.com/)
+  - Simon Stockinger [@InstantNoodleZ](https://github.com/InstantNoodleZ)
   - Sebastian Zauner [@sebastianzauner](https://github.com/sebastianzauner)
 - TinkerCAD
   - Jonathan Spitzbart [@SpitzbartJonathan](https://github.com/SpitzbartJonathan)
