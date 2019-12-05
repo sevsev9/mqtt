@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Login/>
+    <Login @login-submit="test"/>
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'app',
   components: {
     Login
+  },
+  methods:{
+    test(i){
+      alert("name: " + i.name + " password: " + i.password)
+    }
   }
 }
 </script>
