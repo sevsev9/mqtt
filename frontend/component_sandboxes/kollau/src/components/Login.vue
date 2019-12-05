@@ -1,8 +1,8 @@
 <template>
-    <div class="hello">
+    <div class="login">
         <img alt="welcome" src="../assets/welcome.png">
         <br><br><br><br>
-        <b-form @submit.prevent="onSubmit" @reset.prevent="onReset">
+        <b-form @submit.prevent="onSubmit" @reset.prevent="onReset" style="padding-left: 30%; padding-right: 30%">
             <b-form-group
                     id="input-group-1"
                     label="Login"
@@ -28,54 +28,65 @@
                         v-model="userData.password"
                 ></b-form-input>
             </b-form-group>
+            <b-form-group
+                    id="input-group-1"
+                    label="User or password not found!"
+                    label-for="input-1"
+                    style="color: red"
+                    v-if="loginfailed"
+            >
+            </b-form-group>
 
             <b-button type="submit" variant="primary">Submit</b-button>
             <b-button class="ml-3" type="reset" variant="danger">Reset</b-button>
 
         </b-form>
-        <br><br><br><br>
-        Debug: {{debugvalue}}<br>
-        n: {{userData.name}}<br>
-        pw: {{userData.password}}<br>
 
     </div>
 </template>
 
 <script>
-    //var axios = require("axios")
+    const axios = require("axios").default
 
     export default {
         name: 'Login',
-        props: {
-            msg: String
-        },
         data() {
             return {
                 userData: {
                     name: "",
                     password: ""
                 },
-                debugvalue: 0
+                loginfailed: false
             }
         },
         methods: {
             onSubmit() {
-                this.$emit("login-submit", this.userData)
-                /*axios
+                this.loginfailed = false
+
+                // eslint-disable-next-line no-console
+                console.log("DATA: " + JSON.stringify(this.userData))
+
+                axios
                     .post("/login", this.userData)
                     .then(response => {
                         // eslint-disable-next-line no-console
-                        console.log(response)
+                        console.log("Authorization: " + response.data.authorization)
+
+                        if (response.data.authorization == 200) {
+                            this.$emit("login-success", this.userData)
+                        } else if (response.data.authorization == 300) {
+                            this.loginfailed = true
+                        }
+
                     }).catch(err => {
                     // eslint-disable-next-line no-console
-                        console.log(err)
-                })*/
-                this.debugvalue = 22
+                    console.log(err)
+                })
+
             },
             onReset() {
                 this.userData.name = "";
                 this.userData.password = "";
-                this.debugvalue = 33
             }
         }
 
