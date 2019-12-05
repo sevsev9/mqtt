@@ -4,7 +4,7 @@
   "description": "Mongoose part of NodeJS",
   "main": "index.js",
   "dependencies": {
-    "mongoose": "^5.7.12"
+    "mongoose": "^5.7.13"
   },
   "devDependencies": {},
   "scripts": {
