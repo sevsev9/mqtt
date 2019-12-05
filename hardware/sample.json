@@ -1,0 +1,11 @@
+{
+  "time": "12:52:06",
+  "temperature": 26.12,
+  "humidity": 56.12,
+  "pressure": 10753.75
+}
+
+Temperatur in °C
+Humidity in %
+Druck in Pa  (wird über Poti geregelt)
+  
