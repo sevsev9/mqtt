@@ -16,11 +16,6 @@ public class ClientHandler implements Runnable {
     private HTTPAlarmServer server;
     private Gson gson = new Gson();
 
-   /* private static String BAD_REQUEST = "400 Bad Request";
-    private static String OK = "200 OK";
-    private static String VERSION = "HTTP/1.1";
-    private final static String LINE = "-----------------------------------";*/
-
     private Timestamp from;
     private Timestamp to;
     private ArrayList<Alarm> alarms = new ArrayList<>();
@@ -56,29 +51,21 @@ public class ClientHandler implements Runnable {
             }
         }
     }
-    
-    public void interpretRequest(String request) throws IOException {
 
-        String[] lines = request.split("\n");
-        String[] data = lines[5].split("(=|&)");
+    public void interpretRequest(String request) {
 
-            /*// check if POST
-            String[] args = lines[0].split(" ");
-            if (args[0].toUpperCase().compareTo("POST") != 0)
-                status = BAD_REQUEST;
+        String[] attr = request.split(" ");
+        String[] data = attr[1].split("(=|%20|&)");
 
-            // check version
-            if (args[2].compareTo(VERSION) != 0)
-                status = BAD_REQUEST;*/
-        from = Timestamp.valueOf(data[1]);
-        to = Timestamp.valueOf(data[3]);
+        from = Timestamp.valueOf(data[1] + " " + data[2]);
+        to = Timestamp.valueOf(data[4] + " " + data[5]);
     }
 
     public String createResponse() {
 
         String response = "POST /test HTTP/1.1\n" +
                 "Content-Length: " + alarmsAsJSON.length() + "\n" +
-                "Content-Type: text/html; charset=UTF-8" + "\n\n" + alarmsAsJSON;
+                "Content-Type: application/json; charset=UTF-8" + "\n\n" + alarmsAsJSON;
 
         System.out.println("Response: " + response);
 
