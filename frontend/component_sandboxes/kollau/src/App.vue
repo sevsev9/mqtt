@@ -14,7 +14,7 @@ export default {
   },
   methods:{
     test(i){
-      alert(i.name)
+      alert("name: " + i.name + " password: " + i.password)
     }
   }
 }
