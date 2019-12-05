@@ -42,7 +42,7 @@
 </template>
 
 <script>
-    var axios = require("axios")
+    //var axios = require("axios")
 
     export default {
         name: 'Login',
@@ -60,7 +60,8 @@
         },
         methods: {
             onSubmit() {
-                axios
+                this.$emit("login-submit", this.userData)
+                /*axios
                     .post("/login", this.userData)
                     .then(response => {
                         // eslint-disable-next-line no-console
@@ -68,7 +69,7 @@
                     }).catch(err => {
                     // eslint-disable-next-line no-console
                         console.log(err)
-                })
+                })*/
                 this.debugvalue = 22
             },
             onReset() {
