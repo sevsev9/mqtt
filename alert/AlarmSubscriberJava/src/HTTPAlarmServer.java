@@ -16,7 +16,7 @@ public class HTTPAlarmServer {
     DBManager dbManager = new DBManager();
     // dbManager.connect();
 
-    public HTTPAlarmServer(String directory, int port) {
+    public HTTPAlarmServer(int port) {
         System.out.println("Server started\n" +
                 "Listen for new clients\n-----------------------------------");
 
@@ -40,8 +40,6 @@ public class HTTPAlarmServer {
     }
 
     public static void main(String[] args) {
-        int port = 8080;
-
-        new HTTPAlarmServer("", port);
+        new HTTPAlarmServer(8080);
     }
 }

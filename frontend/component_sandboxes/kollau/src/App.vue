@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Login @login-submit="test"/>
+    <Login @login-success="successEvent"/>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     Login
   },
   methods:{
-    test(i){
+    successEvent(i){
       alert("name: " + i.name + " password: " + i.password)
     }
   }
