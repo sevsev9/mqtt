@@ -1,2 +1,2 @@
-//login mit email und passwort
-{ "email": "test@email.com", "password": "testpassword" }
+//login mit username und passwort
+{ "username": "testusername", "password": "testpassword" }
