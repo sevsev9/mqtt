@@ -47,6 +47,7 @@
 
 <script>
     const axios = require("axios").default
+    const config = require("./Login-Config")
 
     export default {
         name: 'Login',
@@ -65,9 +66,11 @@
 
                 // eslint-disable-next-line no-console
                 console.log("DATA: " + JSON.stringify(this.userData))
+                // eslint-disable-next-line no-console
+                console.log("Get data from " + config.connectTo())
 
                 axios
-                    .post("/login", this.userData)
+                    .post(config.connectTo(), this.userData)
                     .then(response => {
                         // eslint-disable-next-line no-console
                         console.log("Authorization: " + response.data.authorization)
