@@ -21,7 +21,7 @@
     - Julian Mehlig [@JulianMehlig](https://github.com/JulianMehlig)
   - Relationale DB
     - Manuel Riedl [@ManuelRiedl](https://github.com/ManuelRiedl)
-  - Core SYS
+  - Subscriber
     - Fabian Zuegg [@FabianZuegg](https://github.com/FabianZuegg)
 - NodeJS
   - Registrierung/Passport...
@@ -29,7 +29,7 @@
   - Persistenz
     - Marc Koppler [@MarcKoppler](https://github.com/MarcKoppler)
   - Allgemeine Struktur
-    - Simon Stockinger [@InstantNoodleZ](https://github.com/InstantNoodleZ)
+    - Fabian Zuegg [@FabianZuegg](https://github.com/FabianZuegg)
 - Publisher
   - Simon Stockinger [@InstantNoodleZ](https://github.com/InstantNoodleZ)
   - Sebastian Zauner [@sebastianzauner](https://github.com/sebastianzauner)
