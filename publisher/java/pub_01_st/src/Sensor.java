@@ -14,4 +14,14 @@ public class Sensor implements Serializable {
         this.humi = humi;
         this.pres = press;
     }
+
+    @Override
+    public String toString() {
+        return "Sensor{" +'\n' +
+                "\ttime='" + time + '\'' +'\n' +
+                "\ttemp=" + temp +'\n' +
+                "\thumi=" + humi +'\n' +
+                "\tpres=" + pres +'\n' +
+                '}';
+    }
 }
