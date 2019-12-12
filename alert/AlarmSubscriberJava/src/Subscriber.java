@@ -16,6 +16,7 @@ public class Subscriber implements MqttCallback {
     String password = "niceDay";
 
     Gson g = new Gson();
+    AlertHandler alertHandler = new AlertHandler();
 
     public static void main(String[] args) {
         new Subscriber().subscribe(topic);
@@ -63,10 +64,8 @@ public class Subscriber implements MqttCallback {
 
     // todo react to incoming alerts
     public void messageArrived(String topic, MqttMessage message) throws Exception {
-        String alertsAsJson = message.toString();
 
-
-        // notify by email
-        
+        // todo notify by email
+        // alertHandler.sendErrorMail(new Alarm(), Arrarylist, gmail, username, password);
     }
 }
