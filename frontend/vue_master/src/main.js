@@ -18,8 +18,6 @@ import AlarmListComp from "@/components/AlarmListComp";
 import MesswerteComp from "@/components/MesswerteComp";
 import RegisterComp from "@/components/RegisterComp";
 
-
-
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 library.add(fas, far, fab);
 

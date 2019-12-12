@@ -38,9 +38,7 @@
 
             <b-button type="submit" variant="primary">Submit</b-button>
             <b-button class="ml-3" type="reset" variant="danger">Reset</b-button>
-
         </b-form>
-
     </div>
 </template>
 
@@ -91,7 +89,6 @@
                 this.userData.password = "";
             }
         }
-
     }
 </script>
 
