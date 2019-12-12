@@ -1,4 +1,0 @@
-# INIT Protocoll
-Arduino --> Get(JSON(Sensoren)) --> Publisher
-Arduino <-- Response(JSON(id - unique)) <-- Publisher7
-Arduino --> Post(JSON(id, data)) --> Publisher

@@ -13,28 +13,32 @@ import java.util.concurrent.Executors;
 public class HTTPAlarmServer {
 
     private ExecutorService executorService = Executors.newCachedThreadPool();
-    DBManager dbManager = new DBManager();
-    // dbManager.connect();
+    private DBManager dbManager;
 
     public HTTPAlarmServer(int port) {
         System.out.println("Server started\n" +
                 "Listen for new clients\n-----------------------------------");
 
-        try (ServerSocket serverSocket = new ServerSocket(port)) {
-            SimpleDateFormat ft = new SimpleDateFormat("dd MM yyyy hh:mm:ss");
-            while (true) {
-                // listening for new clients
-                Socket client = serverSocket.accept();
+        try (DBManager dbManager = new DBManager()) {
+            // todo dbManager.connect();
+            try (ServerSocket serverSocket = new ServerSocket(port)) {
+                SimpleDateFormat ft = new SimpleDateFormat("dd MM yyyy hh:mm:ss");
+                while (true) {
+                    // listening for new clients
+                    Socket client = serverSocket.accept();
 
-                // create log
-                Date dNow = new Date();
-                String log = "Client: " + client.getInetAddress() + " connected at " + ft.format(dNow) + "\n";
-                System.out.println(log);
+                    // create log
+                    Date dNow = new Date();
+                    String log = "Client: " + client.getInetAddress() + " connected at " + ft.format(dNow) + "\n";
+                    System.out.println(log);
 
-                // start new thread for each client
-                executorService.execute(new ClientHandler(this, client));
+                    // start new thread for each client
+                    executorService.execute(new ClientHandler(this, client));
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

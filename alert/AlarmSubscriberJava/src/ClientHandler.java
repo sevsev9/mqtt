@@ -35,7 +35,7 @@ public class ClientHandler implements Runnable {
 
             // read and interpret the request
             interpretRequest(in.readLine());
-            //alarms = server.dbManager.getAlarm(from, to);
+            // todo alarms = server.dbManager.getAlarm(from, to);
             alarmsAsJSON = gson.toJson(alarms);
             System.out.println("\n\tCreate response and send it back to client");
             out.write(createResponse());
