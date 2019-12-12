@@ -54,6 +54,15 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HTTPAlarmServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HTTPAlarmServer" />
       <module name="AlarmSubscriberJava" />
@@ -64,15 +73,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574322325836</updated>
+      <workItem from="1576133961052" duration="769000" />
     </task>
     <servers />
   </component>
@@ -113,6 +114,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Plugins/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1575217312322" />
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1576134440807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576134440807" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1575530591924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
