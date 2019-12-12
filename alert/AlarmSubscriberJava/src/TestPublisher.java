@@ -1,8 +1,7 @@
-package Subscriber;
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
-public class Main {
+public class TestPublisher {
     public static void main(String[] args) {
 
         //Topic name
