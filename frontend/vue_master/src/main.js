@@ -6,19 +6,54 @@ import VueRouter from 'vue-router'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import LoginTest from "@/components/LoginTest";
-import StatisticsTest from "@/components/StatisticsTest";
-import AlarmListTest from "@/components/AlarmListTest";
-import MesswerteTest from "@/components/MesswerteTest";
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import StatisticsComp from "@/components/StatisticsComp";
+import LoginComp from "@/components/LoginComp";
+import AlarmListComp from "@/components/AlarmListComp";
+import MesswerteComp from "@/components/MesswerteComp";
+import RegisterComp from "@/components/RegisterComp";
+
+
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+library.add(fas, far, fab);
+
+
 
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 
 const routes = [
-  {path: '/', component: LoginTest  },
-  {path: '/user/statistics', component: StatisticsTest},
-  {path: '/user/alarmlist', component: AlarmListTest},
-  {path: '/user/messwerte', component: MesswerteTest},
+  {
+    path: '/',
+    component: LoginComp,
+    name: 'login',
+  },
+  {
+    path: '/:user/statistics',
+    component: StatisticsComp,
+    name: 'statistics',
+  },
+  {
+    path: '/:user/alarmlist',
+    component: AlarmListComp,
+    name: 'alarmlist',
+  },
+  {
+    path: '/:user/messwerte',
+    component: MesswerteComp,
+    name: 'messwerte',
+  },
+  {
+    path: '/:user/register',
+    component: RegisterComp,
+    name: 'register',
+  },
 
 ];
 

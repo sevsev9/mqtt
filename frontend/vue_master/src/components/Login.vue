@@ -29,7 +29,6 @@
                 ></b-form-input>
             </b-form-group>
             <b-form-group
-                    id="input-group-1"
                     label="User or password not found!"
                     label-for="input-1"
                     style="color: red"
