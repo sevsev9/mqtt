@@ -1,22 +1,25 @@
 <template>
-    <div>
-        <h1>I am the graph</h1>
-        <hr>
-        <div id="my_dataviz"></div>
-    </div>
+    <v-container fluid fill-height>
+        <v-layout align-center wrap>
+            <v-flex xs12 class="mb-5">
+                <d3-bar-chart :app-name="appName" :d3-data="d3Data">
+                        <!-- Oops, vuetify.js -->
+                </d3-bar-chart>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
-    import * as d3 from "d3";
-    import _ from "lodash";
+    import * as d3 from 'd3';
 
     export default {
-        name: "Graph",
-        props: ["oildata"],
+        name: 'Chart.vue',
+        props: ['oildata'],
         data() {
             return {
                 chart: null
-            }
+            };
         },
         watch: {
             oildata(val) {
@@ -44,11 +47,11 @@
                 const yScale = d3
                     .scaleLinear()
                     .range([chart_height, 0])
-                    .domain([0, _.maxBy(oildata_val, "issues").oildata]);
+                    .domain([0, _.maxBy(oildata_val, "oildata").oildata]);
 
                 this.chart
                     .append("g")
-                    .call(d3.axisLeft(yScale).ticks(_.maxBy(oildata_val, "issues").oildata));
+                    .call(d3.axisLeft(yScale).ticks(_.maxBy(oildata_val, "oildata").oildata));
 
                 const xScale = d3
                     .scaleBand()
@@ -60,6 +63,19 @@
                     .append("g")
                     .attr("transform", `translate(0, ${chart_height})`)
                     .call(d3.axisBottom(xScale));
+
+                const barGroups = this.chart
+                    .selectAll("rect")
+                    .data(oildata_val)
+                    .enter();
+
+                barGroups
+                    .append("rect")
+                    .attr("class", "bar")
+                    .attr("x", g => xScale(g.day))
+                    .attr("y", g => yScale(g.oildata))
+                    .attr("height", g => chart_height - yScale(g.oildata))
+                    .attr("width", xScale.bandwidth());
             }
         }
     }
