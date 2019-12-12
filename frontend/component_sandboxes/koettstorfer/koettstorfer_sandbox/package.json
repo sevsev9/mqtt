@@ -9,9 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
-    "vue": "^2.6.10",
     "d3": "latest",
-    "lodash": "latest"
+    "lodash": "latest",
+    "tween.js": "^16.6.0",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",

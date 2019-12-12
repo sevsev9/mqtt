@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Graph :oildata="oildata"/>
+    <!--<Chart :oildata="oildata"/>-->
+    <SimpleChart/>
   </div>
 </template>
 
 <script>
-import Graph from "./components/Graph";
+// import Chart from "./components/Chart";
+import SimpleChart from "./components/SimpleChart";
 
 export default {
   name: 'app',
   components: {
-    Graph
+    SimpleChart
+    // Chart
   }, data() {
     return {
       oildata: [

@@ -1,5 +1,6 @@
 <template>
     <div>
+        <NavBar></NavBar>
         <h1>Alarm Liste</h1>
         <div>
             Content
@@ -8,8 +9,10 @@
 </template>
 
 <script>
+    import NavBar from "@/components/NavBar";
     export default {
-        name: "AlarmListtest"
+        name: "AlarmListtest",
+        components: {NavBar}
     }
 </script>
 

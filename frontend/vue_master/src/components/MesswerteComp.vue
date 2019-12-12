@@ -1,5 +1,6 @@
 <template>
     <div>
+        <NavBar></NavBar>
         <h1>Messwerte</h1>
         <div>
             Content
@@ -8,8 +9,10 @@
 </template>
 
 <script>
+    import NavBar from "@/components/NavBar";
     export default {
-        name: "MesswerteTest"
+        name: "MesswerteTest",
+        components: {NavBar}
     }
 </script>
 

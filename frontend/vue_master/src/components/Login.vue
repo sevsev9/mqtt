@@ -29,7 +29,6 @@
                 ></b-form-input>
             </b-form-group>
             <b-form-group
-                    id="input-group-1"
                     label="User or password not found!"
                     label-for="input-1"
                     style="color: red"
@@ -39,9 +38,7 @@
 
             <b-button type="submit" variant="primary">Submit</b-button>
             <b-button class="ml-3" type="reset" variant="danger">Reset</b-button>
-
         </b-form>
-
     </div>
 </template>
 
@@ -92,7 +89,6 @@
                 this.userData.password = "";
             }
         }
-
     }
 </script>
 
