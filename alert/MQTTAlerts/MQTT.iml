@@ -7,7 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="gson-2.8.2" level="project" />
-    <orderEntry type="library" name="org.eclipse.paho.client.mqttv3-1.1.0" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
+    <orderEntry type="library" name="twilio-7.46.0-jar-with-dependencies" level="project" />
+    <orderEntry type="library" name="jsmpp-2.3.7" level="project" />
+    <orderEntry type="library" name="slf4j-api-1.7.25" level="project" />
   </component>
 </module>
