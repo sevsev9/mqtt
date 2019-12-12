@@ -26,7 +26,7 @@ Eine NodeJS-basierte Express-Application wird als Subscriber für alle  Sensorda
 Eine Java-basierte Application wird als Subscriber für alle Alarme/Fehler eingesetzt. Der Java-HTTPServer stellt ein REST-API zur Verfügung, der auf Anfrage alle innerhalb eines bestimmten Zeitraums anfallenden Alarme/Fehler zur Verfügung stellt (Fehler, Datum, Meldestelle); Die Fehler sind in einer relationalen DB zu speichern.
 
 ## WebClient
-Als WebClient wird eine auf VUE basierte App eingesetzt, welche den Dialog mit dem WebServer auf einfache Weise gestattet. Das Styling ist anfangs recht einfach zu gestalten & ist später von Bootstrap abzulösen.
+Als WebClient wird eine auf VUE basierte App eingesetzt, welche den Dialog mit dem WebServer auf einfache WEise gestattet. Das Styling ist anfangs recht einfach zu gestalten & ist später von Bootstrap abzulösen.
 
 ## Organisatorisches
 Es ist für das Projekt ein gemeinsames GitHub-Repo einzurichten und ALLE (ausser HW-SImulator) liefern in dieses Repo.
