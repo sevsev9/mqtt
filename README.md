@@ -1,4 +1,5 @@
 # Corporative MQTT Project
+Project Forwarded to [mqtt_gr1](https://github.com/Fruehwirth/mqtt_gr1)
 
 ## Technologies Used
 - VueJS
